@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="island-demo"
+config/description="Exodius Studios 3D Island Rendering Demo"
+run/main_scene="res://DemoIsland/DemoIsland.tscn"
+config/icon="res://icon.png"
+config/windows_native_icon="res://icon.ico"
+
+[debug]
+
+settings/stdout/print_fps=true
+
+[display]
+
+window/dpi/allow_hidpi=true
+window/vsync/use_vsync=false
+
+[editor]
+
+script_templates_search_path="res://.templates"
+
+[rendering]
+
+quality/filters/anisotropic_filter_level=2
+quality/filters/msaa=2
+environment/default_environment="res://default_env.tres"
